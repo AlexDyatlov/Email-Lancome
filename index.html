@@ -1,11 +1,13 @@
 <!DOCTYPE html
 	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>HTML Template</title>
+	<title>Lancome Paris</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<style>
+
+	<style type="text/css">
 		body {
 			width: 100% !important;
 			-webkit-text-size-adjust: 100%;
@@ -13,38 +15,816 @@
 			margin: 0;
 			padding: 0;
 			line-height: 100%;
+			color: #000000;
 		}
 
-		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+		p {
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000000;
+		}
+
+		[style*="Graphik LCG"] {
+			font-family: 'Graphik LCG', arial, sans-serif !important;
+		}
+
+		[style*="HelveticaNeueCyr"] {
+			font-family: 'HelveticaNeueCyr', arial, sans-serif !important;
+		}
 
 		img {
 			outline: none;
 			text-decoration: none;
-			border:none;
+			border: none;
 			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
+			max-width: 100% !important;
 			margin: 0;
 			padding: 0;
 			display: block;
 		}
-    
+
 		table td {
 			border-collapse: collapse;
 		}
-    
+
 		table {
 			border-collapse: collapse;
 			mso-table-lspace: 0pt;
 			mso-table-rspace: 0pt;
 		}
+
+		.header-td {
+			padding-top: 50px;
+		}
+
+		.menu a {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 15px;
+		}
+
+		.menu td {
+			padding-right: 30px;
+		}
+
+		.networks td {
+			padding-right: 41px;
+		}
+
+		.menu .menu-active {
+				padding-right: 0 !important;
+		}
+
+		.menu-active a {
+			color: #f10d48;
+		}
+
+		.label-td {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+
+		.title-td p {
+			text-transform: uppercase;
+			font-size: 45px;
+			line-height: 1.2;
+		}
+
+		.description-td {
+			padding-bottom: 110px;
+		}
+
+		.discount-td {
+			padding-bottom: 95px;
+		}
+
+		.footer-td {
+			padding-top: 50px;
+			padding-bottom: 48px;
+		}
+
+		.footer-td a {
+			color: #ffffff;
+		}
+
+		@media (max-width: 820px) {
+			.table-800 {
+				width: 550px !important;
+			}
+
+			.table-580 {
+				width: 400px !important;
+			}
+
+			.header-td {
+				padding-top: 30px !important;
+			}
+
+			.header-td td {
+				display: block !important;
+				text-align: center !important;
+			}
+
+			.header-td .logo {
+				display: none !important;
+			}
+
+			.logo-mobile {
+				display: block !important;
+			}
+
+			.header-td .menu table {
+				margin: 0 auto;
+			}
+
+			.menu td {
+				display: inline-block !important;
+				padding-right: 15px !important;
+			}
+
+			.label-td {
+				padding-top: 40px;
+				padding-bottom: 20px;
+			}
+
+			.label-td img {
+				width: 183px !important;
+				height: 45px !important;
+			}
+
+			.description-td {
+				padding-bottom: 70px !important;
+			}
+
+			.description-td td p {
+				font-size: 16px !important;
+			}
+
+			.description-td td a {
+				font-size: 11px !important;
+			}
+
+			.description-td .description-title {
+				padding-top: 20px !important;
+				padding-bottom: 10px !important;
+				font-size: 30px !important;
+			}
+
+			.description-td p br {
+				display: none !important;
+			}
+
+			.description-td .text-descr {
+				font-size: 11px !important;
+			}
+
+			.description-td .perfumer-title {
+				font-size: 25px !important;
+				line-height: 1.3 !important;
+			}
+
+			.flacon-td td br {
+				display: none !important;
+			}
+
+			.flacon-td .image-flacon {
+				padding-bottom: 14px !important;
+			}
+
+			.perfumer-td td {
+				display: block !important;
+				text-align: center !important;
+			}
+
+			.perfumer-td .perfumer-descr {
+				padding-bottom: 30px !important;
+			}
+
+			.perfumer-td .water {
+				padding-top: 10px !important;
+				font-size: 10px !important;
+			}
+
+			.perfumer-td .perfumer-lancome {
+				font-size: 18px !important;
+			}
+
+			.perfumer-td .perfumer-lancome span {
+				font-size: 16px !important;
+			}
+
+			.perfumer-td .perfumer-price {
+				padding-bottom: 1px !important;
+				font-size: 17px !important;
+			}
+
+			.perfumer-td .perfumer-link {
+				display: none !important;
+			}
+
+			.perfumer-td .card {
+				padding-bottom: 30px;
+			}
+
+			.discount-td {
+				padding-bottom: 70px !important;
+			}
+
+			.discount-td .discount-title {
+				font-size: 45px !important;
+			}
+
+			.discount-td .discount-text {
+				padding-bottom: 25px !important;
+			}
+
+			.discount-td .discount-descr {
+				padding-bottom: 15px !important;
+			}
+
+			.footer-td {
+				padding-top: 35px !important;
+				padding-bottom: 33px !important;
+			}
+
+			.footer-td td {
+				display: block !important;
+				text-align: center !important;
+			}
+
+			.footer-td td a {
+				font-family: 'HelveticaNeueCyr', arial, sans-serif !important;
+				font-weight: 700 !important;
+			}
+			
+			.footer-td table {
+				margin: 0 auto !important;
+			}
+
+			.networks {
+				padding-bottom: 25px !important;
+			}
+
+			.networks td{
+				display: inline-block !important;
+				padding-right: 44px !important;
+			}
+
+			.networks .last-network {
+				padding-right: 0 !important;
+			}
+
+			.markets {
+				padding-bottom: 30px !important;
+				border-bottom: 1px solid #292929;
+			}
+
+			.markets td {
+				display: inline-block !important;
+			}
+
+			.markets img {
+				width: 99px !important;
+				height: 26px !important;
+			}
+
+			.info-phone {
+				display: table-footer-group !important;
+			}
+
+			.info-phone td {
+				padding-top: 7px !important;
+			}
+
+			.info-phone td a {
+				font-weight: 400 !important;
+				font-family: 'Helvetica', arial, sans-serif !important;
+			}
+
+			.info-service {
+				display: table-header-group !important;
+			}
+
+			.info-service td {
+				padding-top: 22px !important;
+			}
+
+			.info-service td a {
+				opacity: 0.6;
+			}
+
+			.politics {
+				padding-top: 18px !important;
+			}
+		}
+
+		@media (max-width: 600px) {
+			.table-800 {
+				width: 400px !important;
+			}
+
+			.table-580 {
+				width: 350px !important;
+			}
+
+			.menu .menu-hidden {
+				display: none !important;
+			}
+
+			.lancome-descr p {
+				width: 260px !important;
+			}
+
+			.banner-td img {
+				height: 347px !important;
+			}
+
+			.image-flacon img {
+				height: 210px !important;
+			}
+
+			.description-td .descr-btn a {
+				width: 100% !important;
+			}
+		}
+
+		@media (max-width: 481px) {
+			.table-800 {
+				width: 320px !important;
+			}
+
+			.table-580 {
+				width: 280px !important;
+			}
+
+			.perfumer-td img {
+				width: 200px !important;
+				height: 200px !important;
+			}
+
+			.discount-td .table-580 {
+				width: 100% !important;
+			}
+
+			.discount-td .discount-text p {
+				width: 250px !important;
+			}
+
+			.discount-td .discount-text p br{
+				display: none !important;
+			}
+		}
 	</style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
-		
-	</table>
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">
+		IDOLE - АРОМАТ БУДУЩЕГО
+	</div>
+	<div style="background-color:#ffffff;">
+		<!--[if gte mso 9]>
+		<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+			<v:fill type="tile" src="" color="#ffffff"/>
+		</v:background>
+		<![endif]-->
+		<table height="100%" width="100%" cellpadding="0" cellspacing="0">
+			<tr>
+				<td valign="top" align="left">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td>
+								<table class="main table-800" cellpadding="0" cellspacing="0" width="800" align="center">
+									<tr>
+										<td class="header-td" bgcolor="#ffffff">
+											<table class="main table-580" cellpadding="0" cellspacing="0" width="580" align="center">
+												<tr>
+													<td align="right" class="logo-mobile" style="display: none;padding-bottom: 25px;">
+														<a href="https://goldapple.ru/" style="display: inline-block;" target="_blank"
+															title="lancome site">
+															<img src="https://student476.github.io/email-images/lancome/logo.png" width="24"
+																height="25" alt="logo" />
+														</a>
+													</td>
+													<td align="left" class="menu">
+														<table cellpadding="0" cellspacing="0">
+															<tr>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		новинки
+																	</a>
+																</td>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		азия
+																	</a>
+																</td>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		уход
+																	</a>
+																</td>
+																<td class="menu-hidden">
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		макияж
+																	</a>
+																</td>
+																<td class="menu-hidden">
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		парфюм
+																	</a>
+																</td>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		бренды
+																	</a>
+																</td>
+																<td class="menu-active">
+																	<a style="font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';">
+																		распродажа
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td align="right" class="logo">
+														<a href="https://goldapple.ru/" style="display: inline-block;" target="_blank"
+															title="lancome site">
+															<img src="https://student476.github.io/email-images/lancome/logo.png" width="24"
+																height="25" alt="logo" />
+														</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="label-td" bgcolor="#ffffff" align="center">
+											<a href="https://goldapple.ru/" target="_blank" style="display: inline-block;"
+												title="lancome site">
+												<img src="https://student476.github.io/email-images/lancome/lancome.png" width="224" height="55"
+													alt="label" />
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="banner-td" bgcolor="#ffffff" align="center">
+											<img style="object-fit: cover;" src="https://student476.github.io/email-images/lancome/banner.jpg" width="580" height="335"
+												alt="banner" />
+										</td>
+									</tr>
+									<tr>
+										<td class="description-td" bgcolor="#ffffff" align="center">
+											<table class="main table-580" cellpadding="0" cellspacing="0" width="580" align="center">
+												<tr>
+													<td class="description-title" align="center"
+														style="padding-top: 25px;padding-bottom: 15px;font-size: 45px;line-height: 1.2;text-transform: uppercase;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+														IDÔLE - аромат <br /> будущего
+													</td>
+												</tr>
+												<tr>
+													<td class="lancome-descr" align="center" style="padding-bottom: 30px;">
+														<p
+															style="font-size: 20px;line-height: 1.4;font-weight: 300;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+															Каждой женщине, которая не боится быть сильной <br /> и решительной, которая следует по
+															пути
+															оптимизма <br /> и уверенности, Lancôme посвящает Idôle.
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="descr-btn" align="center">
+														<div>
+															<!--[if mso]>
+												<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://goldapple.ru/" style="height:50px;v-text-anchor:middle;width:393px;" stroke="f" fillcolor="#000000">
+													<w:anchorlock/>
+													<center>
+												<![endif]-->
+															<a href="https://goldapple.ru/" target="_blank" title="купить новинку"
+																style="background-color:#000000;color:#ffffff;display:inline-block;font-family: Helvetica, Arial, sans-serif, 'HelveticaNeueCyr';font-size:14px;font-weight:700;line-height:50px;text-align:center;text-decoration:none;width:393px;-webkit-text-size-adjust:none;text-transform: uppercase;letter-spacing: 1.4px;">
+																купить новинку
+															</a>
+															<!--[if mso]>
+													</center>
+												</v:rect>
+											<![endif]-->
+														</div>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="flacon-td description-td" bgcolor="#ffffff" align="center">
+											<table class="main table-580" cellpadding="0" cellspacing="0" width="580" align="center">
+												<tr>
+													<td class="text-descr" align="center"
+														style="padding-bottom: 10px;font-size: 14px;line-height: 18px;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+														технологическое достижение
+													</td>
+												</tr>
+												<tr>
+													<td class="perfumer-title" align="center"
+														style="padding-bottom: 10px;font-size: 35px;line-height: 1.2;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;">
+														самый тонкий флакон <br /> в мире
+													</td>
+												</tr>
+												<tr>
+													<td class="image-flacon" align="center" style="padding-bottom: 20px;">
+														<img style="object-fit: cover;" src="https://student476.github.io/email-images/lancome/flacon.jpg" width="580"
+															height="260" alt="Самый тонкий флакон" />
+													</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<p
+															style="font-size: 20px;line-height: 1.4;font-weight: 300;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+															Новые грани мира парфюмерии. Чистый и искрящийся <br /> аромат, который напомнит Вам
+															драгоценный
+															камень.
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="perfumer-td description-td" bgcolor="#ffffff" align="center">
+											<table class="main table-580" cellpadding="0" cellspacing="0" width="580" align="center">
+												<tr>
+													<td class="text-descr" align="center"
+														style="padding-bottom: 10px;font-size: 14px;line-height: 18px;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+														аккорд чистоты
+													</td>
+												</tr>
+												<tr>
+													<td class="perfumer-title" align="center"
+														style="padding-bottom: 10px;font-size: 45px;line-height: 1.2;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;">
+														неординарность <br /> и смелость
+													</td>
+												</tr>
+												<tr>
+													<td class="perfumer-descr" align="center" style="padding-bottom: 40px;">
+														<p
+															style="font-size: 20px;line-height: 1.4;font-weight: 300;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+															Чистые ноты нового аромата Idôle раскрываются <br /> на обнаженной коже через цветочную
+															дымку, где
+															в главной роли выступает роза из Испарты.
+														</p>
+													</td>
+												</tr>
+											</table>
+											<table class="main table-580" cellpadding="0" cellspacing="0" width="580" align="center">
+												<tr>
+													<td class="card" align="left">
+														<a href="https://goldapple.ru/" style="display: inline-block;" target="_blank"
+															title="парфюмерная вода">
+															<img src="https://student476.github.io/email-images/lancome/product-1.jpg" width="270"
+																height="270" alt="парфюмерная вода" />
+														</a>
+														<table cellpadding="0" cellspacing="0" align="center">
+															<tr>
+																<td class="water" align="right"
+																	style="padding-top: 25px;padding-bottom: 1px;font-size: 11px;line-height: 16.5px;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+																	парфюмерная вода
+																</td>
+															</tr>
+															<tr>
+																<td class="perfumer-lancome" align="right"
+																	style="font-size: 24px;line-height: 1.4;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+																	LANCÔME Idôle / <span style="font-size: 20px;">50 мл</span>
+																</td>
+															</tr>
+															<tr>
+																<td class="perfumer-price" align="right"
+																	style="padding-top: 4px;padding-bottom: 12px;font-size: 23px;line-height: 1.4;font-weight: 700;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+																	6 390 ₽ <span
+																		style="margin-left: 12px;color: #b3b3b3;text-decoration: line-through;">8 520
+																		₽</span>
+																</td>
+															</tr>
+															<tr>
+																<td align="right" class="perfumer-link">
+																	<a href="https://goldapple.ru/" title="купить аромат" target="_blank"
+																		style="font-size: 11px;line-height: 11px;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+																		купить аромат →
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td align="right">
+														<a href="https://goldapple.ru/" style="display: inline-block;" target="_blank"
+															title="парфюмерная вода">
+															<img src="https://student476.github.io/email-images/lancome/product-2.jpg" width="270"
+																height="270" alt="парфюмерная вода" />
+														</a>
+														<table cellpadding="0" cellspacing="0" align="center">
+															<tr>
+																<td class="water"
+																	style="padding-top: 25px;padding-bottom: 1px;font-size: 11px;line-height: 16.5px;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+																	парфюмерная вода
+																</td>
+															</tr>
+															<tr>
+																<td class="perfumer-lancome"
+																	style="font-size: 24px;line-height: 1.4;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+																	LANCÔME Idôle / <span style="font-size: 20px;">25 мл</span>
+																</td>
+															</tr>
+															<tr>
+																<td class="perfumer-price"
+																	style="padding-top: 4px;padding-bottom: 12px;font-size: 23px;line-height: 1.4;font-weight: 700;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+																	3 997 ₽ <span
+																		style="margin-left: 12px;color: #b3b3b3;text-decoration: line-through;">5 330
+																		₽</span>
+																</td>
+															</tr>
+															<tr>
+																<td class="perfumer-link">
+																	<a href="https://goldapple.ru/" title="купить аромат" target="_blank"
+																		style="font-size: 11px;line-height: 11px;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+																		купить аромат →
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="discount-td" bgcolor="#ffffff" align="center">
+											<table class="main table-580" bgcolor="#ffe9da" cellpadding="0" cellspacing="0" width="580"
+												align="center">
+												<tr>
+													<td align="center"
+														style="padding-top: 30px;font-size: 14px;line-height: 16.5px;font-weight: 700;opacity: 0.7;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;letter-spacing: 1.4px;">
+														промокод
+													</td>
+												</tr>
+												<tr>
+													<td class="discount-title" align="center"
+														style="font-size: 50px;line-height: 1.2;font-weight: 400;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;">
+														summer
+													</td>
+												</tr>
+												<tr>
+													<td class="discount-text" align="center" style="padding-top: 5px;padding-bottom: 15px;">
+														<p
+															style="font-size: 14px;line-height: 1.3;font-weight: 400;opacity: 0.7;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+															дарим 300 ₽ при оформлении заказа от 3000 ₽* <br /> без учёта доставки
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td align="center">
+														<div>
+															<!--[if mso]>
+											<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://goldapple.ru/" style="height:50px;v-text-anchor:middle;width:280px;" stroke="f" fillcolor="#ffffff">
+												<w:anchorlock/>
+													<center>
+												<![endif]-->
+															<a href="https://goldapple.ru/" target="_blank"
+																style="background-color:#ffffff;color:#000000;display:inline-block;font-family: Helvetica, Arial, sans-serif, 'Helvetica';text-transform: uppercase;font-size:11px;font-weight:700;line-height:50px;text-align:center;text-decoration:none;width:280px;-webkit-text-size-adjust:none;letter-spacing: 1.4px;"
+																title="применить промо-код">
+																применить промо-код
+															</a>
+															<!--[if mso]>
+													</center>
+												</v:rect>
+											<![endif]-->
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td class="discount-descr" align="center" style="padding-top: 18px;padding-bottom: 20px;">
+														<p style="font-size: 11px;line-height: 15.4px;font-weight: 400;opacity: 0.8;font-family: Helvetica, Arial, sans-serif, 'Helvetica';">
+															* Код действителен после применения скидки
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td class="footer-td" bgcolor="#000000">
+											<table class="main table-580" cellpadding="0" cellspacing="0" width="580" align="center">
+												<tr>
+													<td class="networks" align="left">
+														<table cellpadding="0" cellspacing="0">
+															<tr>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank" title="фейсбук">
+																		<img src="https://student476.github.io/email-images/lancome/facebook.png"
+																			alt="фейсбук" />
+																	</a>
+																</td>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank" title="одноклассники">
+																		<img src="https://student476.github.io/email-images/lancome/classmates.png"
+																			alt="одноклассники" />
+																	</a>
+																</td>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank" title="вк">
+																		<img src="https://student476.github.io/email-images/lancome/vk.png"
+																			alt="вк" />
+																	</a>
+																</td>
+																<td class="last-network">
+																	<a href="https://goldapple.ru/" target="_blank" title="инстаграм">
+																		<img src="https://student476.github.io/email-images/lancome/insta.png"
+																			alt="инстаграм" />
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td class="markets" align="right">
+														<table cellpadding="0" cellspacing="0">
+															<tr>
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank" title="appstore">
+																		<img src="https://student476.github.io/email-images/lancome/appstore.png"
+																			width="85" height="24" alt="appstore" />
+																	</a>
+																</td>
+																<td style="padding-left: 32px;">
+																	<a href="https://goldapple.ru/" target="_blank" title="googleplay">
+																		<img src="https://student476.github.io/email-images/lancome/googleplay.png"
+																			width="94" height="24" alt="googleplay" />
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td class="info" align="left">
+														<table cellpadding="0" cellspacing="0">
+															<tr class="info-phone">
+																<td style="padding-top: 39px;padding-bottom: 7px;">
+																	<a href="tel:74951234567"
+																		style="font-size: 14px;line-height: 16px;font-family: Helvetica, Arial, sans-serif, 'Graphik LCG';font-weight: 400;"
+																		title="телефон">
+																		+7 (495) 123-45-67
+																	</a>
+																</td>
+															</tr>
+															<tr class="info-service">
+																<td>
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-size: 10px;line-height: 15px;font-family: Helvetica, Arial, sans-serif, 'Helvetica';font-weight: 400;"
+																		title="служба поддержки">
+																		Служба поддержки
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td align="right">
+														<table cellpadding="0" cellspacing="0">
+															<tr>
+																<td class="politics" style="padding-top: 40px;padding-bottom: 5px;">
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-size: 10px;line-height: 15px;font-family: Helvetica, Arial, sans-serif, 'Helvetica';font-weight: 400;"
+																		title="условия пользовательского соглашения">
+																		Условия пользовательского соглашения
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td style="text-align: right;">
+																	<a href="https://goldapple.ru/" target="_blank"
+																		style="font-size: 10px;line-height: 15px;font-family: Helvetica, Arial, sans-serif, 'Helvetica';font-weight: 400;"
+																		title="отписаться от рассылки">
+																		Отписаться от рассылки
+																	</a>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
 </body>
-
 </html>
